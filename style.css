@@ -4,3 +4,22 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: darkred;
+}
+
+a{
+    color: red;
+}
+
+a:hover, a:visited{
+    color: maroon;
+}
+
+.container{
+    align-self: center;
+    margin: auto;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
