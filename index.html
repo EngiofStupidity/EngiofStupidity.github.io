@@ -11,5 +11,33 @@
     <div class="container">
         hello
     </div>
+    <h2> PiServer</h2>
+    Use this tool to easily set up a network of client Raspberry Pis connected to a single x86-based server via Ethernet. With PiServer, you don't need SD cards, you can control all clients via the server, and you can add and configure user accounts — it's ideal for the classroom, your home, or an industrial setting.
+</div>
+<div>
+    <h3>Basic terms:</h3>
+
+<strong>Server</strong>  - the server is the computer that provides the file system, boot files, and password authentication to the client(s) <br>
+<strong>Client</strong>  - a client is a computer that retrieves boot files from the server over the network, and then uses a file system the server has shared. More than one client can connect to a server, but all clients use the same file system. <br>
+<strong>User</strong>  - a user is a username/password combination that allows someone to log into a client to access the file system on the server. Any user can log into any client with their credentials, and will always see the same server and share the same file system. Users do not have sudo capability on a client, meaning they cannot make significant changes to the file system and software. <br>
+</div> 
+<p>You can boot certain Pi models (including Pi 3 Model B, and Pi 400) without an SD card over and ethernet connection from another computer. This is called network or PXE (pronounced 'pixie') booting. This can be hard to set up as if you mess up the DHCP or TFTP servers. PiServer helps with this by doing it for you.
+</p>
+<div>
+<h3>PiServer's features:</h3>
+<ul>
+ <li> It automatically detects Raspberry Pis trying to network boot, so you don't have to work out their Ethernet addresses.</li>
+ <li> It sets up a DHCP server either in proxy mode or in full IP mode. No matter the mode, the DHCP server will only reply to the Raspberry Pis you have specified, which is important for network safety.</li>
+ <li> It creates usernames and passwords for the server. This is great for a classroom full of Pis: just set up all the users beforehand, and everyone gets to log in with their passwords and keep all their work in a central place. Moreover, users cannot change the software, so educators have control over which programs their learners can use.</li>
+ <li> It uses a slightly altered Raspbian build which allows separation of temporary spaces, doesn't have the default 'pi' user, and has LDAP enabled for log-in.</li>
+</ul>
+</div>
+<div>
+<h3>You can use PiServer for: </h3> 
+<ul>
+    <li>Serve a whole classroom of Pis</li>
+    <li>Build a home server</li>
+    <li>Use it as a controller for networked Pis</li>
+</ul>
 </body>
 </html>
