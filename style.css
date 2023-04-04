@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 body{
@@ -23,3 +24,15 @@ a:hover, a:visited{
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+
+p{
+    margin-left: 15px;
+}
+
+ol{
+    margin-left: 30px;
+    padding-left: 30px;
+}
