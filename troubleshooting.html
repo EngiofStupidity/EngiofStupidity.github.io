@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Troubleshooting</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Troubleshooting</h1>
+    <ul id="navbar">
+        <li class="navbarLinks"><a href="index.html">What is PiServer?</a></li>
+        <li class="navbarLinks"><a href="howToInstallIt.html">Installation</a></li>
+        <li class="navbarLinks"><a href="troubleshooting.html">Troubleshooting</a></li>
+    </ul>
+<ul>
+    <li>If some clients are connecting and others are not, check if you've enabled network booting on them. You can easily check by plugging an ethernet cable into the Pi without inserting an SD card. The LEDs on the Pi and the connector should turn on. If they don't, see the clients section of the how to install page.</li>
+    <li>If you can't connect any clients, check if the network is suitable:
+
+
+<ol>
+   <li>Format an SD card and copy bootcode.bin from a standard Raspbian Image on it</li>
+   <li>Plug the SD card into a client Pi and check if it appears as a new MAC address in the PiServer GUI. </li>
+   <li>If it appears, this is a known issue, and you can head to the <a href="https://www.raspberrypi.org/forums/" target="_blank">PiServer forums</a> for help.</li>
+    </li>
+</ol>
+<p>For a temporary fix, clone the SD card with bootcode.bin for all the clients.</p>
+</ul>
+
+
+<p>If you have any more issues you can head to the <a href="https://www.raspberrypi.org/forums/" target="_blank">PiServer forums</a> or the <a href="https://github.com/raspberrypi/piserver/issues" target="_blank">GitHub Issues</a> page.</p>
+
+</div>
+</body>
+</html>
