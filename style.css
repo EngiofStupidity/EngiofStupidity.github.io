@@ -37,7 +37,12 @@ h1{
     text-align: center;
 }
 
-p, h2{
+h2{
+    padding-top: 10px;
+    text-align: center;
+}
+
+p, h2, h3{
     margin-left: 15px;
 }
 

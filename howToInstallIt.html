@@ -15,8 +15,8 @@
             <li class="navbarLinks"><a href="howToInstallIt.html">Installation</a></li>
             <li class="navbarLinks"><a href="troubleshooting.html">Troubleshooting</a></li>
         </ul>
-        <h1>How to install PiServer</h1> 
-        <strong><h2>Client computers:</h2></strong>
+        <h2>How to install PiServer</h2> 
+        <strong><h3>Client computers:</h3></strong>
         <ol>
             <li>Boot up the Pi with an SD with a <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Rasbian Lite image</a></li>
             <li>Open a terminal and type in: <br>echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt</li>
@@ -25,7 +25,7 @@
         <p>This added the line program_usb_boot_mode=1 to the end of the config file in /boot. The next time you power up the Pi, it will be able to network boot.</p>
         
         
-        <h2><strong>The server:</strong></h2>
+        <h3><strong>The server:</strong></h3>
         <p>You will need an x86 computer and <a href="https://www.raspberrypi.org/downloads/raspberry-pi-desktop/" target="_blank"> x86 Debian Stretch</a>. You can use a Pi, but the file system and booting will be slow. Your server will require a good amount of disk space, and you will need at least 16GB SD cards for the Raspberry Pis.<p>
         <ol>
             <li>Start PiServer</li>
