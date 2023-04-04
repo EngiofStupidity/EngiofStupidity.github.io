@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to install PiServer</title>
+</head>
+<body>
+<h1>How to install PiServer</h1> 
+<strong><h2>Client computers:</h2></strong>
+<ol>
+    <li>Boot up the Pi with an SD with a <a href="https://www.raspberrypi.org/downloads/raspbian/" target="_blank">Rasbian Lite image</a></li>
+    <li>Open a terminal and type in: <br>echo program_usb_boot_mode=1 | sudo tee -a /boot/config.txt</li>
+    <li>Turn the Pi off and remove the SD</li>
+</ol>
+<p>This added the line program_usb_boot_mode=1 to the end of the config file in /boot. The next time you power up the Pi, it will be able to network boot.</p>
+
+
+<h2><strong>The server:</strong></h2>
+You will need an x86 computer and <a href="https://www.raspberrypi.org/downloads/raspberry-pi-desktop/" target="_blank"> x86 Debian Stretch</a>. You can use a Pi, but the file system and booting will be slow. Your server will require a good amount of disk space, and you will need at least 16GB SD cards for the Raspberry Pis.
+<ol>
+    <li>Start PiServer</li>
+    <li>Go to <strong>Preferences > PiServer</strong>. This will start the installation wizard.</li>
+    <li>Skip the introduction screen.</li>
+    <!--[Kép az Add clients képernyőről]-->
+    <li>This is the <strong>Add clients</strong> screen. Here you can add the Pi clients to your server. Your Pis' MAC addresses should appear here. If they don't, try setting up the clients again. Click <strong>next</strong> if you're done.</li>
+    <li>The <strong>next</strong> screen is the <strong>Add users</strong> screen. Here you can set up users and passwords for your server. You will be able to add more later. Click <strong>next</strong> if you're done.</li>
+    <!--[Kép az Add users képernyőről]-->
+    <li>The <strong>next</strong> screen is the <strong>Add software</strong> screen. Here you can select which operating system to use on the clients. Raspbian and Raspbian Lite are available by default, but you can install your own operating system from a local file or a URL. You can look at the scripts in /var/lib/piserver/scripts for further information about how the operating system image files are created. (Later you can individually assign operating systems.)</li>
+    <!--[Kép az Add software képernyőről]-->
+    <li>Once you click <strong>next</strong>, the installation wizard will install the necessary components on the clients. This will take a while. After it's done, reboot the clients so they can boot from the server.</li>
+</ol>
+
+
+
+</body>
+</html>
