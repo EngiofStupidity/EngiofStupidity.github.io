@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-right: 10px;
 }
 
 body{
@@ -13,22 +15,29 @@ a{
     color: red;
 }
 
-a:hover, a:visited{
-    color: maroon;
+a:visited{
+    color: rgb(206, 18, 18);
 }
+
+a:hover{
+    color:rgb(117, 27, 27)
+}
+
+
 
 .container{
     align-self: center;
     margin: auto;
     width: 70%;
     background-color: rgba(255, 255, 255, 0.7);
+    height:100%;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1{
     text-align: center;
 }
 
-p{
+p, h2{
     margin-left: 15px;
 }
 
@@ -38,12 +47,28 @@ ol, ul{
 }
 
 #navbar{
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
     list-style: none;
-    align-items: center;
+    width: 100%;
+    display: table;
+    text-align: center;
+    height: 50px;
+    background-color: rgb(255, 225, 225);
+    line-height: 50px;
 }
 
+
+
 .navbarLinks{
+    
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 0 auto;
+    vertical-align: middle;
 }
